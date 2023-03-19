@@ -4,9 +4,9 @@
 
 /* custom h1s */
 .majorh1 {
-    font-size: 15vmax;
-    height: 12vmax;
-    line-height: 12vmax;
+    font-size: 10vmax;
+    height: 10vmax;
+    line-height: 10vmax;
     background: linear-gradient(45deg, rgb(201, 143, 255), rgb(57, 57, 255));
     background: -webkit-gradient(45deg, rgb(201, 143, 255), rgb(57, 57, 255));
     background-clip: text;
@@ -61,6 +61,9 @@
     .page {
         width: 100% !important;
         margin-right: auto !important;
+    }
+    #homePage .container {
+        width: 90% !important;
     }
     #workWithMePage {
         padding-bottom: 5rem;

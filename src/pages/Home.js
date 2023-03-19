@@ -1,5 +1,4 @@
 import React from 'react'
-import BlackButton1 from '../components/BlackButton1'
 import './pages.css'
 import {BsFillPhoneFill, BsTwitter} from 'react-icons/bs'
 import {MdEmail} from 'react-icons/md'
@@ -17,8 +16,7 @@ const Home = () => {
         <div className='container'>
             <div className='titles'>
                 <span>
-                    <h1 className='majorh1'>Soft</h1>
-                    <h1 className='majorh1'>ware</h1>
+                    <h1 className='majorh1'>Software</h1>
                 </span>
                 <h1 className='majorh2'>Developer</h1>
                 <span>
@@ -30,10 +28,10 @@ const Home = () => {
                 <h1>Hello🙋🏽‍♂️, I am Derek Pesa,</h1>
                 <p>{txt}</p>
                 <span className='contacts'>
-                    <a title='phone number' href={`tel:${cont.phone}`} target="_blank" ><BsFillPhoneFill /></a>
-                    <a href={`mailto:${cont.email}?subject=Mail from your portfolio website`} target="_blank" ><MdEmail /></a>
-                    <a href={`${cont.twitter}`} target="_blank" ><BsTwitter /></a>
-                    <a href={`https://wa.me/${cont.whatsapp}`} target="_blank" ><RiWhatsappFill /></a>
+                    <a title='phone number' href={`tel:${cont.phone}`} target="_blank" rel="noreferrer" ><BsFillPhoneFill /></a>
+                    <a title='email address' href={`mailto:${cont.email}?subject=Mail from your portfolio website`} target="_blank" rel="noreferrer" ><MdEmail /></a>
+                    <a title='twitter link' href={`${cont.twitter}`} target="_blank" rel="noreferrer" ><BsTwitter /></a>
+                    <a title='whatsapp link' href={`https://wa.me/${cont.whatsapp}`} target="_blank" rel="noreferrer" ><RiWhatsappFill /></a>
                 </span>
             </div>
         </div>

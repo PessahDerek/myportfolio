@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from 'react'
+import React, { useState } from 'react'
 import useIsPc from '../hooks/useIsPc'
 import './comp.css'
 import MobileNavBtn from './MobileNavBtn'

@@ -9,6 +9,7 @@ const projects = [
         code: '',
         image: require('../images/orogare.webp')
     },
+    
 ]
 
 export default projects

@@ -1,0 +1,76 @@
+.page {
+    width: calc(100vw - 10rem);
+    min-height: calc(100vh - 3em);
+    margin-left: auto;
+    animation: enter 1s;
+    transition: all 1s linear;
+    animation-timing-function: linear;
+}
+@keyframes enter {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+/* workWithMePage styling */
+#workWithMePage .container .items{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+#workWithMePage .items .hireMeBtns {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    justify-content: left;
+    text-align: left !important;
+    grid-auto-flow: row;
+    gap: 1vmax;
+}
+
+
+
+/* portfolio page styling */
+#portfolioPage {
+    padding-bottom: 2rem;
+}
+#portfolioPage .container, #workWithMePage .container {
+    width: 95%;
+    margin: auto;
+}
+#portfolioPage .projects {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+}
+#portfolioPage h1{
+    text-align: left !important;
+}
+
+/* home page styling */
+#homePage {
+    display: grid;
+}
+#homePage .container {
+    width: 90%;
+    min-height: 50vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+#homePage .titles, #homePage .details {
+    margin: auto;
+    width: 100%;
+}
+#homePage .container .titles span {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: -50px;
+    text-align: left;
+}
+#homePage .details {
+    display: grid;
+    min-height: 60%;
+    grid-auto-flow: row;
+}

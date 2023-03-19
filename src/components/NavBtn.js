@@ -1,9 +1,12 @@
 import React from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
+import useDownload from '../hooks/useDownload'
+import './comp.css'
 
 const NavBtn = ({text, path, action}) => {
     const navigate = useNavigate()
     const { pathname } = useLocation()
+    const download = useDownload()
 
     let color =  path.length < 2 ? 
                 pathname === "/" ? "#8E57FF" : "black" :
@@ -18,7 +21,7 @@ const NavBtn = ({text, path, action}) => {
     }
     const moveTo = () => {
         if(action){ // only download button
-
+            download()
             return
         }
         navigate(`/${path}`)
@@ -26,7 +29,7 @@ const NavBtn = ({text, path, action}) => {
 
   return (
     <div style={container} >
-        <button style={{...btnStyle, color: color}} onClick={moveTo}>{text}</button>
+        <button className='navBtn' style={{...btnStyle, color: color}} onClick={moveTo}>{text}</button>
     </div>
   )
 }

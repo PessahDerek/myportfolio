@@ -1,57 +1,13 @@
 const projects = [
     {
-        title: "Cake Magic",
+        title: "Orogare TVC",
         type: "Website",
-        stack: ['React', 'Express', 'MongoDB'],
-        desc: "This is an ecommerce website that helps cakemagic take its business online, allo....\nThis is an ecommerce website that helps cakemagic take its business online, allo.....",
+        stack: ['React'],
+        desc: "This is the official website of Orogare Technical and Vocational Training Center." + 
+            "The website properly presents the school and the courses it offers and is a gateway to admission application",
         link: '',
         code: '',
-        image: require('../images/cakemagic.png')
-    },
-    {
-        title: "Cake Magic",
-        type: "Website",
-        stack: ['React', 'Express', 'MongoDB'],
-        desc: "This is an ecommerce website that helps cakemagic take its business online, allo....\nThis is an ecommerce website that helps cakemagic take its business online, allo.....",
-        link: '',
-        code: '',
-        image: require('../images/cakemagic.png')
-    },
-    {
-        title: "Cake Magic",
-        type: "Website",
-        stack: ['React', 'Express', 'MongoDB'],
-        desc: "This is an ecommerce website that helps cakemagic take its business online, allo....\nThis is an ecommerce website that helps cakemagic take its business online, allo.....",
-        link: '',
-        code: '',
-        image: require('../images/cakemagic.png')
-    },
-    {
-        title: "Cake Magic",
-        type: "Website",
-        stack: ['React', 'Express', 'MongoDB'],
-        desc: "This is an ecommerce website that helps cakemagic take its business online, allo....\nThis is an ecommerce website that helps cakemagic take its business online, allo.....",
-        link: '',
-        code: '',
-        image: require('../images/cakemagic.png')
-    },
-    {
-        title: "Cake Magic",
-        type: "Website",
-        stack: ['React', 'Express', 'MongoDB'],
-        desc: "This is an ecommerce website that helps cakemagic take its business online, allo....\nThis is an ecommerce website that helps cakemagic take its business online, allo.....",
-        link: '',
-        code: '',
-        image: require('../images/cakemagic.png')
-    },
-    {
-        title: "Cake Magic",
-        type: "Website",
-        stack: ['React', 'Express', 'MongoDB'],
-        desc: "This is an ecommerce website that helps cakemagic take its business online, allo....\nThis is an ecommerce website that helps cakemagic take its business online, allo.....",
-        link: '',
-        code: '',
-        image: require('../images/cakemagic.png')
+        image: require('../images/orogare.webp')
     },
 ]
 

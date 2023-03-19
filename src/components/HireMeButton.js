@@ -5,6 +5,7 @@ const HireMeButton = ({upwork}) => {
     const style = {
         width: "90%",
         height: '5rem',
+        margin: "auto",
         backgroundColor: upwork ? "#13a300" : "white",
         color: upwork ? "white" : "#13a300"
     }

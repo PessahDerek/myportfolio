@@ -5,6 +5,7 @@
     animation: enter 1s;
     transition: all 1s linear;
     animation-timing-function: linear;
+    text-align: left;
 }
 @keyframes enter {
     from{opacity: 0;}
@@ -39,7 +40,9 @@
 #portfolioPage .projects {
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: start;
+    justify-items: start;
 }
 #portfolioPage h1{
     text-align: left !important;
@@ -55,6 +58,7 @@
     margin: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 5%;
 }
 
 #homePage .titles, #homePage .details {
@@ -64,13 +68,14 @@
 #homePage .container .titles span {
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: left;
     flex-wrap: wrap;
-    gap: -50px;
+    gap: 15px;
     text-align: left;
 }
 #homePage .details {
     display: grid;
     min-height: 60%;
     grid-auto-flow: row;
+    gap: 10%;
 }

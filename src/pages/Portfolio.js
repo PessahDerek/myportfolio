@@ -6,7 +6,7 @@ import './pages.css'
 const Portfolio = () => {
     
   return (
-    <div className='page' id='portfolioPage'>
+    <div className='page' id='portfolioPage' data-aos="zoom-in">
         <div className='container'>
             <h1 className='titleh1'>Portfolio</h1>
             <div className='projects'>

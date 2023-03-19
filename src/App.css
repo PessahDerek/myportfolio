@@ -4,13 +4,65 @@
 
 /* custom h1s */
 .majorh1 {
-    font-size: 10vmax;
+    font-size: 15vmax;
+    height: 12vmax;
+    line-height: 12vmax;
+    background: linear-gradient(45deg, rgb(201, 143, 255), rgb(57, 57, 255));
+    background: -webkit-gradient(45deg, rgb(201, 143, 255), rgb(57, 57, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.majorh2 {
+    font-size: 7vmax;
     height: 7vmax;
     line-height: 7vmax;
-    /* text-shadow: -18px 0px 12px rgba(0, 0, 0, 0.492); */
+    color: blueviolet;
 }
 .titleh1 {
     font-size: 3rem;
     width: 15rem;
     font-weight: lighter;
+}
+.contacts {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.contacts a {
+    text-decoration: none;
+}
+.contacts a *{
+    font-size: 1.5rem;
+    color: blueviolet !important;
+}
+.contacts a *:nth-child(1):hover {
+    color: rgb(134, 134, 255);
+}
+
+::-webkit-scrollbar-track {
+    background: #f7f7ff;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(182, 103, 255);
+}
+::-webkit-scrollbar-track-piece {
+    background: #f7f7ff;
+}
+::-webkit-scrollbar-button {
+    background: ##f7f7ff;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: ##f7f7ff;
+}
+@media only screen and (max-width: 600px){
+    .page {
+        width: 100% !important;
+        margin-right: auto !important;
+    }
+    #workWithMePage {
+        padding-bottom: 5rem;
+    }
 }

@@ -2,14 +2,14 @@ import React from 'react'
 import BorderButton1 from './BorderButton1'
 import './comp.css'
 
-const ShowProject = ({project:{title, desc, image, stack}}) => {
+const ShowProject = ({project:{title, type, desc, image, stack}}) => {
   return (
-    <div className='showProject'>
+    <div data-aos="flip-up"  className='showProject'>
         <section className='img'>
             <img src={image} alt="project" />
         </section>
         <section className='project-details'>
-            <h1>{title}</h1>
+            <h1>{title} ({type})</h1>
             <p>{desc}</p>
             <span>
                 {stack.reduce((tot, curr)=> tot + ", " + curr)}

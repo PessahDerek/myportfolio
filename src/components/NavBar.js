@@ -1,8 +1,11 @@
 import React from 'react'
+import useIsPc from '../hooks/useIsPc'
 import NavBtn from './NavBtn'
 
 const NavBar = () => {
-    if(window.innerWidth > 599) return (
+    const isPc = useIsPc()
+
+    if(isPc) return (
     <nav className='pcNavBar' style={navStyle}>
         <NavBtn text={"home page"} path={""} />
         <NavBtn text={"my portfolio"} path={"portfolio"} />

@@ -1,10 +1,14 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import './comp.css'
+import MobileDropdown from './MobileDropdown'
 
 const StickyNavBar = () => {
+    const navigate = useNavigate()
   return (
     <nav style={style} >
-        <h1 className='myName'>iamDerek</h1>
+        <h1 className='myName' onClick={()=>navigate("/")} >iamDerek</h1>
+        <MobileDropdown />
     </nav>
   )
 }
@@ -17,7 +21,8 @@ const style = {
     zIndex: "1000",
     position: 'sticky',
     top: '0',
-    display: 'flex'
+    display: 'flex',
+    justifyContent: 'space-between'
 }
 
 export default StickyNavBar

@@ -5,7 +5,7 @@ import './pages.css'
 
 const HireMe = () => {
   return (
-    <div className='page' id='workWithMePage'>
+    <div className='page' id='workWithMePage' data-aos="zoom-in">
         <div className='container'>
             <h1 className='titleh1'>Reach Me</h1>
             <div className='items'>

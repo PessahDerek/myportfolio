@@ -21,7 +21,8 @@ const navStyle = {
     display: "flex",
     flexDirection: 'column',
     justifyContent: "space-around",
-    zIndex: "1000"
+    zIndex: "1000",
+    backgroundColor: "#1d1d1d"
 }
 
 export default NavBar

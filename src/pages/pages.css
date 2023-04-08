@@ -34,13 +34,14 @@
     padding-bottom: 2rem;
 }
 #portfolioPage .container, #workWithMePage .container {
-    width: 95%;
+    width: 100%;
     margin: auto;
+    overflow: hidden;
 }
 #portfolioPage .projects {
     display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 40vw));
     justify-content: center;
     justify-items: center;
 }
@@ -58,7 +59,6 @@
     margin: auto;
     display: grid;
     grid-auto-flow: row;
-    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
     gap: 5%;
 }
 

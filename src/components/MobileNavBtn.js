@@ -25,6 +25,7 @@ const MobileNavBtn = ({text, path, show}) => {
 const style = {
     width: "100%",
     height: "100%",
-    backgroundColor: '#F7F7F7'
+    // backgroundColor: '#F7F7F7'
+    backgroundColor: "#3B3B3B"
 }
 export default MobileNavBtn

@@ -1,15 +1,6 @@
 
 
-.funny {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    transition: all;
-    border-radius: 50%;
-    z-index: 500;
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    background: radial-gradient(transparent, crimson);
-}
+
 /* mobile drop down styling */
 .mobileDropDown span {
     display: grid;
@@ -23,8 +14,10 @@
     height: 30%;
     line-height: 30%;
     margin: auto;
-    background-color: #F7F7F7;
+    /* background-color: #F7F7F7; */
+    background-color: #202020;
 }
+
 .mobileDropDown .bars {
     display: grid;
     width: 100%;
@@ -39,7 +32,7 @@
     height: 3px;
     transition: all 0.2s linear;
     transform-origin: center;
-    background-color: #202020;
+    background-color: white;
 }
 
 .mobileDropDown .btns {
@@ -49,7 +42,8 @@
     left: -100%;
     box-shadow: -4px 16px 12px rgba(0, 0, 0, 0.16);
     position: absolute;
-    background-color: #F7F7F7;
+    /* background-color: #F7F7F7; */
+    background-color: #202020;
     animation: drop 0.4s linear forwards;
     transition: all 0.5s linear;
     transform-origin: right;
@@ -86,17 +80,17 @@ form textarea {
 
 /* showProject widget styling */
 .showProject {
-    width: 90%;
-    max-width: 300px;
-    /* margin: auto; */
-    background-color: white;
+    width: 100%;
+    min-width: 300px;
+    height: max-content !important;
+    display: grid;
+    background-color: transparent;
     text-align: left;
     transition: all 0.2s linear;
 }
 .showProject:hover {
-    transform: scale(1.05) !important;
+    transform: scale(1.01) !important;
     border-radius: 5px;
-    overflow: hidden;
     box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.211);
 }
 .showProject .project-details {
@@ -107,11 +101,11 @@ form textarea {
 }
 .project-details p {
     overflow: hidden;
-   text-overflow: ellipsis;
-   display: -webkit-box;
-   -webkit-line-clamp: 4;
-           line-clamp: 4; 
-   -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+           line-clamp: 2; 
+    -webkit-box-orient: vertical;
 }
 .project-details p:hover {
     -webkit-line-clamp: initial;
@@ -131,17 +125,20 @@ form textarea {
 }
 .showProject .img {
     width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 .showProject .img img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
 /* buttons */
 .navBtn:hover{
-    background-color: #6f00ff3d !important;
+    background-color: #cea8ff3e !important;
     backdrop-filter: blur(15px);
+    color: white !important;
 }
 .blackButton1 {
     width: 10rem;

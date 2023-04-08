@@ -9,8 +9,8 @@ const NavBtn = ({text, path, action}) => {
     const download = useDownload()
 
     let color =  path.length < 2 ? 
-                pathname === "/" ? "#8E57FF" : "black" :
-                pathname.includes(path) ? "#8E57FF" : "black" 
+                pathname === "/" ? "white" : "#AE7CE7" :
+                pathname.includes(path) ? "white" : "#AE7CE7" 
 
     const container = {
         transition: "width 0.5s linear",

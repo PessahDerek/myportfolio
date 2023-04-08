@@ -28,10 +28,10 @@ const Home = () => {
                 <h1>Hello🙋🏽‍♂️, I am Derek Pesa,</h1>
                 <p>{txt}</p>
                 <span className='contacts'>
-                    <a title='phone number' href={`tel:${cont.phone}`} target="_blank" rel="noreferrer" ><BsFillPhoneFill /></a>
-                    <a title='email address' href={`mailto:${cont.email}?subject=Mail from your portfolio website`} target="_blank" rel="noreferrer" ><MdEmail /></a>
-                    <a title='twitter link' href={`${cont.twitter}`} target="_blank" rel="noreferrer" ><BsTwitter /></a>
-                    <a title='whatsapp link' href={`https://wa.me/${cont.whatsapp}`} target="_blank" rel="noreferrer" ><RiWhatsappFill /></a>
+                    <a title='phone number' href={`tel:${cont.phone}`} target="_blank" rel="noreferrer" ><BsFillPhoneFill id='icon' /></a>
+                    <a title='email address' href={`mailto:${cont.email}?subject=Mail from your portfolio website`} target="_blank" rel="noreferrer" ><MdEmail id='icon' /></a>
+                    <a title='twitter link' href={`${cont.twitter}`} target="_blank" rel="noreferrer" ><BsTwitter id='icon' /></a>
+                    <a title='whatsapp link' href={`https://wa.me/${cont.whatsapp}`} target="_blank" rel="noreferrer" ><RiWhatsappFill id='icon' /></a>
                 </span>
             </div>
         </div>

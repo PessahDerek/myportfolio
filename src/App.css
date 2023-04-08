@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #1d1d1d;
 }
 
 /* custom h1s */
@@ -18,11 +19,21 @@
     height: 7vmax;
     line-height: 7vmax;
     color: blueviolet;
+    background: linear-gradient(45deg, rgb(201, 143, 255), rgb(57, 57, 255));
+    background: -webkit-gradient(45deg, rgb(201, 143, 255), rgb(57, 57, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .titleh1 {
     font-size: 3rem;
     width: 15rem;
     font-weight: lighter;
+    background: linear-gradient(45deg, rgb(201, 143, 255), rgb(57, 57, 255));
+    background: -webkit-gradient(45deg, rgb(201, 143, 255), rgb(57, 57, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .contacts {
     width: 80%;
@@ -32,10 +43,16 @@
 }
 .contacts a {
     text-decoration: none;
+    width: 30px;
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+    border-radius: 50%;
 }
 .contacts a *{
     font-size: 1.5rem;
-    color: blueviolet !important;
+    color: rgb(134, 134, 255);
+    margin: auto;
 }
 .contacts a *:nth-child(1):hover {
     color: rgb(134, 134, 255);
@@ -45,17 +62,17 @@
     background: #f7f7ff;
 }
 ::-webkit-scrollbar-thumb {
-    background: rgb(182, 103, 255);
+    background: #99999c;
 }
 ::-webkit-scrollbar-track-piece {
     background: #f7f7ff;
 }
 ::-webkit-scrollbar-button {
-    background: ##f7f7ff;
+    background: #f7f7ff;
 }
 ::-webkit-scrollbar {
     width: 10px;
-    background-color: ##f7f7ff;
+    background-color: #f7f7ff;
 }
 @media only screen and (max-width: 600px){
     .page {
@@ -67,5 +84,13 @@
     }
     #workWithMePage {
         padding-bottom: 5rem;
+    }
+    .project-details p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: initial !important;
+               line-clamp: initial !important; 
+        -webkit-box-orient: vertical;
     }
 }

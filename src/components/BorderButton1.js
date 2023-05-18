@@ -3,7 +3,7 @@ import './comp.css'
 
 const BorderButton1 = ({text, action}) => {
   return (
-    <button action={action} className='borderButton1'>
+    <button onClick={action} className='borderButton1'>
         {text}
     </button>
   )

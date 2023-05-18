@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App">
         <NavBar />
-        <StickyNavBar />
+        {window.innerWidth < 600 && <StickyNavBar />}
         <Routes>
             <Route exact path='/' element={<Home />} />
             <Route exact path="/portfolio" element={<Portfolio />} />

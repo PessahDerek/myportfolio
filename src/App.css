@@ -77,6 +77,7 @@
 @media only screen and (max-width: 600px){
     .page {
         width: 100% !important;
+        min-height: calc(100vh - 3em) !important;
         margin-right: auto !important;
     }
     #homePage .container {

@@ -1,12 +1,13 @@
 .page {
     width: calc(100vw - 10rem);
-    min-height: calc(100vh - 3em);
+    min-height: 100vh;
     margin-left: auto;
     animation: enter 1s;
     transition: all 1s linear;
     animation-timing-function: linear;
     text-align: left;
 }
+
 @keyframes enter {
     from{opacity: 0;}
     to{opacity: 1;}

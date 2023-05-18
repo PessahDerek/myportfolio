@@ -10,7 +10,7 @@ const Home = () => {
     "secure and scalable software solutions for"+
     "all cadre of clients, from businesses to "+
     "institutions, companies to individuals. \n"+
-    "Do you have a project contact me, let's talk"
+    "Do you have a project? contact me, let's talk"
   return (
     <div className='page' id='homePage' data-aos="zoom-in">
         <div className='container'>

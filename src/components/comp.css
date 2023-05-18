@@ -64,6 +64,10 @@ form {
     margin: auto;
     background-color: white;
 }
+form input, form textarea {
+    cursor: auto !important;
+    color: black;
+}
 form button {
     width: 100% !important;
 }
@@ -82,8 +86,10 @@ form textarea {
 .showProject {
     width: 100%;
     min-width: 300px;
-    height: max-content !important;
+    min-height: 40vh;
     display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: 5vh 30vh max-content;
     background-color: transparent;
     text-align: left;
     transition: all 0.2s linear;
@@ -94,11 +100,24 @@ form textarea {
     box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.211);
 }
 .showProject .project-details {
+    width: 100%;
+    height: 100%;
     padding: 1vmax;
     display: grid;
     grid-auto-flow: row;
     gap: 0.2rem;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.411);
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
 }
+@media screen and (min-width: 600px) {
+    .showProject .project-details:hover {
+        opacity: 1;
+    }
+}
+
 .project-details p {
     overflow: hidden;
     text-overflow: ellipsis;

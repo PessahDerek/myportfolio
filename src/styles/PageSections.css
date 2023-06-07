@@ -1,0 +1,139 @@
+
+/* skills section */
+#skills-section .set {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+#skills-section .set span {
+    display: grid;
+    grid-auto-flow: row;
+    list-style-position: inside;
+    outline: 1px solid #0000001e;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+#skills-section .set span .title h2 {
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+
+/* work with me sections */
+#work-with-me {
+    margin: auto;
+}
+#work-with-me .children {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.third-parties {
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: max-content;
+    gap: 1rem;
+}
+.third-party-btn {
+    text-decoration: none;
+    width: 50%;
+    min-width: 300px;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 5px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    box-shadow: 0px 0px 12px #0c640028;
+}
+.third-party-btn svg {
+    font-size: 2em;
+    margin: auto 0 auto 0;
+    font-size: 2em;
+}
+#upwork {
+    background-color: #108A00;
+    color: white;
+}
+#upwork *{
+    color: white;
+}
+
+#fiverr {
+    background-color: white;
+    color: #108A00;
+}
+#fiverr * {
+    color: #108A00;
+}
+.third-parties img {
+    width: 60%;
+    top: 20%;
+    transform: rotate(20deg);
+    opacity: 0.8;
+    margin: auto;
+}
+
+/* portfolio */
+#portfolio .projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0.5rem;
+}
+#portfolio {
+    padding-bottom: 5%;
+}
+
+
+/* homepage */
+#introduction {
+    height: 80vh;
+    display: grid;
+    display: -ms-grid;
+    grid-auto-flow: row;
+    align-items: center;
+}
+#introduction .text {
+    max-width: 700px;
+    margin-top: auto;
+    display: grid;
+    display: -ms-grid;
+    grid-auto-flow: row;
+    gap: 1rem;
+}
+#introduction h1 {
+    font-size: clamp(5vmax, 6vmax, 7vmax);
+    font-weight: lighter;
+}
+
+#introduction .CTAs {
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+#introduction .links-div {
+    width: 100%;
+    
+}
+#introduction .links {
+    width: 100%;
+    height: 2em;
+    display: flex;
+    flex-direction: row;
+}
+#introduction .links div:nth-child(1){
+    width: 35%;
+    min-width: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+#introduction .links div:nth-child(1) a {
+    margin: auto auto auto 0;
+}
+#introduction .links div:nth-child(1) a:hover {
+    color: var(--blue);
+}
+

@@ -9,7 +9,7 @@ const DropDownBtn = ({path}) => {
     const { downloadCv } = useResume()
 
     const gotoPath = () =>{
-      if(path.path == "resume"){
+      if(path.path === "resume"){
         return downloadCv()
       }
       if(path.path === ""){

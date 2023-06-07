@@ -4,10 +4,6 @@ import '../styles/Comp.css'
 
 const WorkWithMeForm = () => {
     const [resp, setResp] = useState("")
-    const handleSubmit = e => {
-        e.preventDefault();
-
-    }
 
   return (
     <form action="https://send.pageclip.co/gDXFsvRMDiL17yWPCDMPL24loXV6lqVm/portfolio-form" className="work-with-me-form" method="post">

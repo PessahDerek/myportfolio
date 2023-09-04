@@ -4,7 +4,7 @@ export const projects = [
         title: "OROGARE TVC",
         stack: ["ReactJs", "CSS"],
         types: ["Website"],
-        link: "https://orogaretvc.ac.ke",
+        link: "https://orogaretechnical.ac.ke",
         github: null,
         image: require('../images/orogare.png')
     },
@@ -17,8 +17,16 @@ export const projects = [
         image: require('../images/kenye.png')
     },
     {
+        title: "Sands Store",
+        stack: ["ReactJs", "Tailwind", "ExpressJs", "MongoDB"],
+        types: ["Web Application"],
+        link: "https://sandsstore.vercel.app",
+        github: null,
+        image: require('../images/sandstore.png')
+    },
+    {
         title: "TicketSphere",
-        stack: ["ReactJs", "NodeJs", "MongoDb", "CSS"],
+        stack: ["ReactJs", "ExpressJs", "MongoDb", "CSS"],
         types: ["Web Application"],
         link: "https://ticketsphere.co.ke",
         github: null,
@@ -26,7 +34,7 @@ export const projects = [
     },
     {
         title: "Shoppey",
-        stack: ["ReactJs", "NodeJs", "MongoDb", "Tailwind"],
+        stack: ["ReactJs", "ExpressJs", "MongoDb", "Tailwind"],
         types: ["PWA"],
         link: "https://shoppey.vercel.app",
         github: "https://github.com/PessahDerek/Shoppey",
